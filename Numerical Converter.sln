@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numerical Converter", "Numerical Converter\Numerical Converter.csproj", "{BECCC6BE-BA97-4C2A-8FD7-C22CCEE28F0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BECCC6BE-BA97-4C2A-8FD7-C22CCEE28F0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BECCC6BE-BA97-4C2A-8FD7-C22CCEE28F0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BECCC6BE-BA97-4C2A-8FD7-C22CCEE28F0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BECCC6BE-BA97-4C2A-8FD7-C22CCEE28F0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B642856-AC91-4E9C-BC74-DAFA5C0660F1}
+	EndGlobalSection
+EndGlobal

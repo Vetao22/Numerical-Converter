@@ -1,0 +1,50 @@
+﻿<Window x:Name="state" x:Class="Numerical_Converter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Numerical_Converter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="175.73" Width="437.034" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <Style TargetType="Control" x:Key="marginStyle" >
+            <Setter Property="Margin" Value="3"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Choose the conversion: " Style="{StaticResource marginStyle}"/>
+        <ComboBox Grid.Row="0" Grid.Column="1" SelectedIndex="0" Style="{StaticResource marginStyle}"
+                  Name="cmbChoice" SelectionChanged="cmbChoice_SelectionChanged">
+            <ComboBoxItem Content="Decimal to Binary"/>
+            <ComboBoxItem Content="Binary to Decimal"/>
+            <ComboBoxItem Content="Decimal to Hexadecimal"/>
+            <ComboBoxItem Content="Hexadecimal to Decimal"/>
+            <ComboBoxItem Content="Binary to Hexadecimal"/>
+            <ComboBoxItem Content="Hexadecimal to Binary"/>
+        </ComboBox>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Input: " Style="{StaticResource marginStyle}"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Style="{StaticResource marginStyle}" x:Name="txtInput" MaxLength="8" TextChanged="txtInput_TextChanged"/>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Result: " Style="{StaticResource marginStyle}"/>
+        <Border BorderBrush="AliceBlue" BorderThickness="2" Grid.Row="2" Grid.Column="1" Margin="3" >
+            <TextBlock Margin="3" Name="txtResult"/>
+        </Border>
+
+        <Button Grid.Row="3" Grid.Column="0" Content="Convert" Name="btnConvert" Margin="8 5 5 5"
+                BorderBrush="AntiqueWhite" FontWeight="Bold" Background="#FFCDF3EE" Click="btnConvert_Click"/>
+    </Grid>
+</Window>
